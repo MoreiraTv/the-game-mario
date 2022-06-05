@@ -1,6 +1,7 @@
 # the-game-mario
 Criei o jogo do Mário usando html, css e JavaScript.
-I created Mario's game using html, css and JavaScript
+
+I created Mario's game using html, css and JavaScript.
 
 ![image](https://user-images.githubusercontent.com/54282051/172059489-a166ff0c-eda0-4d21-bdb8-c2710c55a02e.png)
 
