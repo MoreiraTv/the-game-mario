@@ -13,7 +13,7 @@ const jump = () => {
 
 //Score do jogo
 let scorePoint = 0;
-const pointsLoop = setInterval(() => {
+const ScorePoint = () => {
   const pipePostition = pipe.offsetLeft;
   if (pipePostition) {
     scorePoint++;
@@ -27,7 +27,9 @@ const pointsLoop = setInterval(() => {
   console.log(scorePoint);
 
 
-}, 100)
+}
+
+let pointsLoop = setInterval(ScorePoint, 100)
 
 
 //verify jump
@@ -69,7 +71,9 @@ const reset = () => {
     mario.src = './images/mario.gif'
     mario.style.width = '150px';
     mario.style.marginLeft = '0'
-    loop = setInterval(verifyPipe, 10)
+    loop = setInterval(verifyPipe, 10);
+    scorePoint = 0;
+    pointsLoop = setInterval(ScorePoint, 100);
   }  
 }
 
